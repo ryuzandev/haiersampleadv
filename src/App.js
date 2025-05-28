@@ -44,7 +44,7 @@ function App() {
             path={`/haiersample/`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbarCommon />
                 <HaierCarousal />
                 <HaierGridMultiService />
@@ -62,7 +62,7 @@ function App() {
             path={`/${brandName}/haier/book-now`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierBookNowCards />
                 <HaierChatbot />
@@ -79,7 +79,7 @@ function App() {
             path={`/${brandName}/haier/troubleshoot`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierTroubleshootCards />
                 <HaierChatbot />
@@ -96,7 +96,7 @@ function App() {
             path={`/${brandName}/haier/exoticdeletecards`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierExoticAUtoDeleteCards />
                 <HaierChatbot />
@@ -113,7 +113,7 @@ function App() {
             path={`/${brandName}/haier/tv`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierTvComponent />
                 <HaierChatbot />
@@ -130,7 +130,7 @@ function App() {
             path={`/${brandName}/haier/washing`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierWashingMachine />
                 <HaierChatbot />
@@ -147,7 +147,7 @@ function App() {
             path={`/${brandName}/haier/microwave`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierMicroWave />
                 <HaierChatbot />
@@ -164,7 +164,7 @@ function App() {
             path={`/${brandName}/haier/Refrigerator`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierRefrigerator />
                 <HaierChatbot />
@@ -181,7 +181,7 @@ function App() {
             path={`/${brandName}/haier/waterheater`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierDishwasher />
                 <HaierChatbot />
@@ -198,7 +198,7 @@ function App() {
             path={`/${brandName}/haier/aircondition`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierAirConditioner />
                 <HaierChatbot />
@@ -215,7 +215,7 @@ function App() {
             path={`/${brandName}/haier/products`}
             element={
               <>
-                <HaierOffers />
+                {/* <HaierOffers /> */}
                 <HaierNavbar />
                 <HaierAllProducts />
                 <HaierChatbot />
