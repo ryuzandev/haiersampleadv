@@ -39,8 +39,8 @@ function App() {
           {/* HAIER COMPONENTS START HERE ---------------------------> */}
           <Route
             // path="lg/"
-            // path={`/${brandName}/haier/`}
-            path={`/${brandName}/`}
+            path={`/${brandName}/haier/`}
+            // path={`/${brandName}/`}
             element={
               <>
                 <HaierOffers />
