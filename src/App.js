@@ -41,7 +41,7 @@ function App() {
             // path="lg/"
             // path={`/${brandName}/haier/`}
             // path={`/${brandName}/`}
-            path={`/haier/`}
+            path={`/haiersample/`}
             element={
               <>
                 <HaierOffers />
