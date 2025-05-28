@@ -1,0 +1,248 @@
+/* .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background: #f0f8ff;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #1d8cf8;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.viewBtn, .deleteBtn {
+  background: #1d8cf8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.viewBtn:hover, .deleteBtn:hover {
+  background: #0a6fb3;
+}
+
+.countdown {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #1d8cf8;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.loadingText {
+  font-size: 1.4rem;
+  color: #555;
+} */
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background: #f0f8ff;
+}
+
+/* .card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.02);
+} */
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+
+  /* Fixed height for card */
+  height: 350px;
+  overflow: hidden; /* Hide anything overflowing */
+  display: flex;
+  flex-direction: column; /* Ensure content is stacked vertically */
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  color: #1d8cf8;
+}
+
+.card p {
+  margin: 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* .cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.viewBtn,
+.deleteBtn {
+  background: #1d8cf8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+} */
+.cardActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* Push buttons to the bottom */
+  padding-top: 1.5rem; /* Space between content and buttons */
+}
+
+.viewBtn,
+.deleteBtn {
+  background: #1d8cf8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* .viewBtn:hover,
+.deleteBtn:hover {
+  background: #0a6fb3;
+} */
+
+.viewBtn:hover,
+.deleteBtn:hover {
+  background: #0a6fb3;
+}
+
+.deleteBtn {
+  background: red; /* Red background for delete button */
+}
+
+.deleteBtn:hover {
+  background: #d32f2f; /* Darker red on hover */
+}
+
+.countdown {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #1d8cf8;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.loadingText {
+  font-size: 1.4rem;
+  color: #555;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modalContent {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.modalDetails p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.closeBtn,
+.deleteBtn {
+  background: #1d8cf8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.closeBtn:hover,
+.deleteBtn:hover {
+  background: #0a6fb3;
+}

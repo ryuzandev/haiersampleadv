@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ryuzandev.github.io/sonysample",
-  "name": "sonysample",
+  "homepage": "https://ryuzandev.github.io/haiersample/haier",
+  "name": "haiersample",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +10,7 @@
     "bootstrap-icons": "^1.11.3",
     "cra-template": "1.2.0",
     "file-loader": "^6.2.0",
+    "firebase": "^11.8.1",
     "fuse.js": "^7.1.0",
     "http-proxy-middleware": "^3.0.3",
     "lg": "file:",

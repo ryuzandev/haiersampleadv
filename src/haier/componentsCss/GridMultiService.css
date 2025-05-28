@@ -1,0 +1,165 @@
+/* General Styles for the Component */
+.component-background {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    width: 95%;
+  }
+  
+  .banner-row {
+    margin-bottom: 40px;
+  }
+  
+  .banner-text {
+    text-align: center;
+    padding: 20px;
+    border: 0px solid;
+    background-color: rgba(2, 0, 0, 0.862);
+    transform: skew(-10deg);
+    
+    
+  }
+  
+  .banner-text h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    color: white;
+  }
+  
+  .banner-text p {
+    font-size: 1.1rem;
+    color: #555;
+    color: white;
+  }
+  
+  /* Video Container Styling */
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; /* Fixed height for the video */
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+   
+  }
+  
+  .video-container.expanded iframe {
+    transform: scale(1.1);
+  }
+  
+  .video-container iframe {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  
+  .video-container.expanded .overlay {
+    display: block;
+  }
+  
+  /* Service Cards */
+  .service-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .service-image {
+    width: 80%;
+    height: 70%px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h5 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .service-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 767px) {
+    .banner-text h2 {
+      font-size: 2rem;
+    }
+  
+    .banner-text p {
+      font-size: 1rem;
+    }
+  
+    .video-container {
+      height: 200px;
+    }
+  
+    .service-card {
+      padding: 15px;
+    }
+  
+    .service-image {
+      width: 80%;
+      height: 70%;
+    }
+  
+    .service-card h5 {
+      font-size: 1rem;
+    }
+  
+    .service-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .video-container {
+      height: 250px;
+    }
+  }
+  
+  

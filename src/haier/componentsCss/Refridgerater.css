@@ -1,0 +1,95 @@
+/* Refrigerator Component Styling */
+.fridge-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f7f6;
+  border-radius: 10px;
+}
+
+.fridge-carousel-item-content {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.fridge-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fridge-carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.fridge-carousel-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.fridge-carousel-btn {
+  font-weight: bold;
+  width: 200px;
+  transform: skew(-5deg);
+}
+
+.fridge-grid-container {
+  margin-top: 40px;
+}
+
+.fridge-grid-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.fridge-grid-img-container {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fridge-grid-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fridge-grid-img:hover {
+  transform: scale(1.05);
+}
+
+.fridge-grid-description {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fridge-reverse {
+  flex-direction: row-reverse;
+}
+
+.fridge-learn-more-btn {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.fridge-learn-more-btn:hover {
+  background: #333;
+  color: white;
+  border-color: #333;
+}

@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "phone": "123-456-7890",
+      "service": "Television",
+      "issue": "Screen flickering",
+      "description": "The screen flickers intermittently during usage.",
+      "preferredDate": "2024-12-20",
+      "preferredTime": "10:00 AM",
+      "address": "123 Main St, City, Country"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "phone": "987-654-3210",
+      "service": "Washing Machine",
+      "issue": "Not spinning",
+      "description": "The washing machine starts but doesn’t spin the clothes.",
+      "preferredDate": "2024-12-21",
+      "preferredTime": "2:00 PM",
+      "address": "456 Oak St, City, Country"
+    },
+    {
+      "id": 3,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "phone": "555-123-9876",
+      "service": "Microwave Oven",
+      "issue": "Not heating",
+      "description": "The microwave turns on but the food doesn’t heat up.",
+      "preferredDate": "2024-12-22",
+      "preferredTime": "11:00 AM",
+      "address": "789 Pine St, City, Country"
+    },
+    {
+      "id": 4,
+      "name": "Emily White",
+      "email": "emily.white@example.com",
+      "phone": "555-987-1234",
+      "service": "Television",
+      "issue": "No signal",
+      "description": "The TV shows 'No Signal' despite being connected.",
+      "preferredDate": "2024-12-23",
+      "preferredTime": "9:00 AM",
+      "address": "101 Maple St, City, Country"
+    },
+    {
+      "id": 5,
+      "name": "Chris Johnson",
+      "email": "chris.johnson@example.com",
+      "phone": "444-321-6547",
+      "service": "Washing Machine",
+      "issue": "Water leakage",
+      "description": "Water leaks out from the washing machine during use.",
+      "preferredDate": "2024-12-24",
+      "preferredTime": "3:00 PM",
+      "address": "202 Birch St, City, Country"
+    },
+    {
+      "id": 6,
+      "name": "Sarah Lee",
+      "email": "sarah.lee@example.com",
+      "phone": "333-654-9876",
+      "service": "Microwave Oven",
+      "issue": "Display not working",
+      "description": "The microwave’s display is blank and not responsive.",
+      "preferredDate": "2024-12-25",
+      "preferredTime": "1:00 PM",
+      "address": "303 Cedar St, City, Country"
+    },
+    {
+      "id": 7,
+      "name": "David Kim",
+      "email": "david.kim@example.com",
+      "phone": "222-876-5432",
+      "service": "Television",
+      "issue": "Audio issues",
+      "description": "The audio is not working, although the picture is fine.",
+      "preferredDate": "2024-12-26",
+      "preferredTime": "5:00 PM",
+      "address": "404 Willow St, City, Country"
+    },
+    {
+      "id": 8,
+      "name": "Olivia Green",
+      "email": "olivia.green@example.com",
+      "phone": "111-234-5678",
+      "service": "Washing Machine",
+      "issue": "Overheating",
+      "description": "The washing machine gets too hot during the wash cycle.",
+      "preferredDate": "2024-12-27",
+      "preferredTime": "12:00 PM",
+      "address": "505 Elm St, City, Country"
+    },
+    {
+      "id": 9,
+      "name": "James Scott",
+      "email": "james.scott@example.com",
+      "phone": "666-543-2109",
+      "service": "Microwave Oven",
+      "issue": "Buttons unresponsive",
+      "description": "The microwave buttons are not responding to presses.",
+      "preferredDate": "2024-12-28",
+      "preferredTime": "4:00 PM",
+      "address": "606 Fir St, City, Country"
+    },
+    {
+      "id": 10,
+      "name": "Lily Adams",
+      "email": "lily.adams@example.com",
+      "phone": "777-432-1098",
+      "service": "Television",
+      "issue": "Remote not working",
+      "description": "The remote control for the television is not functioning.",
+      "preferredDate": "2024-12-29",
+      "preferredTime": "8:00 AM",
+      "address": "707 Redwood St, City, Country"
+    }
+  ]
+  

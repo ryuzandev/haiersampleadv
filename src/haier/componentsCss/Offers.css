@@ -1,0 +1,47 @@
+/* Full-width and height container */
+.offers-section {
+    width: 100%; /* Full width of the screen */
+    height: 5vh; /* 50% of the viewport height */
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Allows proper placement for the scrolling text */
+    overflow: hidden; /* Ensures no overflow is visible */
+  }
+  
+  /* Scrolling text container */
+  .scrolling-text-container {
+    width: 100%; /* Full width for the scrolling text */
+    position: absolute; /* Absolute position for smooth scrolling */
+    white-space: nowrap; /* Prevents wrapping of text */
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  /* Scrolling text animation */
+  .scrolling-text {
+    display: inline-block;
+    font-size: 1.5rem; /* Responsive font size */
+    font-weight: bold;
+    /* padding:2px; */
+    color: #007bff; /* Bootstrap primary color */
+    animation: scroll-text 15s linear infinite;
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .scrolling-text {
+      font-size: 1.5rem; /* Smaller font size for smaller screens */
+    }
+  }
+  

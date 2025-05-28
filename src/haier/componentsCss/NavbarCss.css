@@ -1,0 +1,94 @@
+/* NavScrollExample.css */
+
+/* Dark Theme Styles */
+.navbar-dark-theme {
+  background-color: #343a40; /* Bootstrap dark background */
+}
+
+.nav-scroll .nav-link {
+  color: #f8f9fa; /* Light text for dark backgrounds */
+}
+
+.nav-scroll .nav-link:hover {
+  color: #ffc107; /* Highlight color for links on hover */
+}
+
+.nav-dropdown-dark .dropdown-item {
+  color: #343a40; /* Text color for dropdown items */
+}
+
+.nav-dropdown-dark .dropdown-item:hover {
+  background-color: #ffc107; /* Highlight dropdown items on hover */
+  color: #212529; /* Dark text for highlighted items */
+}
+
+.search-input {
+  background-color: #495057; /* Dark input background */
+  border: 1px solid #6c757d; /* Border matching dark theme */
+  color: #f8f9fa; /* Light text color */
+}
+
+.search-input::placeholder {
+  color: #ced4da; /* Placeholder text color */
+}
+
+.search-button {
+  border-color: #ffc107; /* Border matching highlight color */
+  color: #ffc107; /* Button text */
+}
+
+.search-button:hover {
+  background-color: #ffc107; /* Button background on hover */
+  color: #212529; /* Text color on hover */
+}
+
+/* new css */
+/* Force collapsed (hamburger) view until 1270px */
+/* @media (min-width: 1270px) {
+  .custom-expand .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .custom-expand .navbar-toggler {
+    display: none;
+  }
+} */
+/* new css */
+/* .search-suggestions {
+  z-index: 1000;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+} */
+.search-suggestions {
+  z-index: 9999; /* Make sure it's above other elements */
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%; /* directly below input */
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* new css */
+.navbar-dark-theme .navbar-brand img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.navbar-dark-theme .navbar-brand img:hover {
+  transform: scale(1.05);
+}
+

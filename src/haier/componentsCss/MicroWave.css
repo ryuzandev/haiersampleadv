@@ -1,0 +1,96 @@
+/* Microwave Component Styling */
+.microwave-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f7f6;
+  /* padding: 20px 10px; */
+  border-radius: 10px;
+}
+
+.microwave-carousel-item-content {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+
+.microwave-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.microwave-carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.microwave-carousel-btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.microwave-carousel-btn {
+  font-weight: bold;
+  width: 200px;
+  transform: skew(-5deg);
+}
+
+.microwave-grid-container {
+  margin-top: 40px;
+}
+
+.microwave-grid-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.microwave-grid-img-container {
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.microwave-grid-img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.microwave-grid-img:hover {
+  transform: scale(1.05);
+}
+
+.microwave-grid-description {
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.microwave-reverse {
+  flex-direction: row-reverse;
+}
+
+.microwave-learn-more-btn {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.microwave-learn-more-btn:hover {
+  background: #333;
+  color: white;
+  border-color: #333;
+}

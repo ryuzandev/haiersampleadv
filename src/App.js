@@ -1,27 +1,28 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from "react";
 
-// Importing Components
-import Offers from "./components/Offers";
-import Navbar from "./components/Navbar";
-import NavbarCommon from "./components/NavbarCommon";
-import Carousal from "./components/Carousal";
-import GridMultiService from "./components/GridMultiService";
-import Footer from "./components/Footer";
-import BookNowCards from "./components/BookNowCards";
-import TroubleshootCards from "./components/TroubleshootCards";
-import TvComponent from "./components/TvComponent";
-import WashingMachine from "./components/WashingMachine";
-import MicroWave from "./components/MicroWave";
-import AirConditioner from "./components/AirConditioner";
-import { ProductData } from "./ProductData";
-import AllProducts from "./components/AllProducts";
-import Refrigerator from "./components/Refrigerator";
-import Dishwasher from "./components/DishWasher";
-import MusicStereo from "./components/MusicStereo";
-import PlayStation from "./components/PlayStation";
-import Chatbot from "./components/AssestComponents/Chatbot";
-import ContactUsFloating from "./components/AssestComponents/ContactUsFloating";
+// Importing Components FOR hair------------------------------> start
+import HaierOffers from "./haier/components/Offers";
+import HaierNavbar from "./haier/components/Navbar";
+import HaierNavbarCommon from "./haier/components/NavbarCommon";
+import HaierCarousal from "./haier/components/Carousal";
+import HaierGridMultiService from "./haier/components/GridMultiService";
+import HaierFooter from "./haier/components/Footer";
+import HaierBookNowCards from "./haier/components/BookNowCards";
+import HaierTroubleshootCards from "./haier/components/TroubleshootCards";
+import HaierTvComponent from "./haier/components/TvComponent";
+import HaierWashingMachine from "./haier/components/WashingMachine";
+import HaierMicroWave from "./haier/components/MicroWave";
+import HaierAirConditioner from "./haier/components/AirConditioner";
+// import { ProductData } from "./ProductData";
+import HaierAllProducts from "./haier/components/AllProducts";
+import HaierRefrigerator from "./haier/components/Refrigerator";
+import HaierDishwasher from "./haier/components/DishWasher";
+import HaierChatbot from "./haier/components/AssestComponents/Chatbot";
+import HaierContactUsFloating from "./haier/components/AssestComponents/ContactUsFloating";
+import HaierExoticAUtoDeleteCards from "./haier/components/ExoticAutoDeleteCards";
+import HaierConsoleBox from "./haier/components/AssestComponents/ConsoleBox";
+// importing Components FOR haier------------------------------> end
 
 // Context Resource
 import { createContext } from "react";
@@ -30,222 +31,200 @@ import { createContext } from "react";
 export const AppContext = createContext();
 
 function App() {
-  // console.log(ProductData);
-  // --> book now
-  const [book, setBook] = useState([
-    {
-      id: 1,
-      name: "John Doe",
-      email: "john.doe@example.com",
-      phone: "123-456-7890",
-      service: "Television Repair",
-      preferredDate: "2024-12-20",
-      preferredTime: "10:00 AM",
-      address: "123 Main St, City, Country",
-      comments: "Please handle the screen with care.",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      email: "jane.smith@example.com",
-      phone: "987-654-3210",
-      service: "Washing Machine Repair",
-      preferredDate: "2024-12-21",
-      preferredTime: "2:00 PM",
-      address: "456 Oak St, City, Country",
-      comments: "The washing machine is making noise.",
-    },
-  ]);
-
-  // --> Trouble shoot
-  const [trouble, settrouble] = useState([
-    {
-      id: 1,
-      name: "John Doe",
-      email: "john.doe@example.com",
-      phone: "123-456-7890",
-      service: "Television",
-      issue: "Screen flickering",
-      description: "The screen flickers intermittently during usage.",
-      preferredDate: "2024-12-20",
-      preferredTime: "10:00 AM",
-      address: "123 Main St, City, Country",
-    },
-    {
-      id: 2,
-      name: "Jane Smith",
-      email: "jane.smith@example.com",
-      phone: "987-654-3210",
-      service: "Washing Machine",
-      issue: "Not spinning",
-      description: "The washing machine starts but doesn’t spin the clothes.",
-      preferredDate: "2024-12-21",
-      preferredTime: "2:00 PM",
-      address: "456 Oak St, City, Country",
-    },
-  ]);
-
+  const brandName = "haiersample";
   return (
-    <AppContext.Provider value={{ book, trouble, setBook, settrouble }}>
+    <AppContext.Provider value={{ brandName }}>
       <Router>
-        <Offers />
-        {/* <Navbar /> */}
-        {/* Navbar is always visible */}
         <Routes>
-          {/* Home Page - These components will be visible on the homepage */}
+          {/* HAIER COMPONENTS START HERE ---------------------------> */}
           <Route
-            path="sonysample/"
+            // path="lg/"
+            path={`/${brandName}/haier/`}
             element={
               <>
-                <NavbarCommon />
-                <Carousal />
-                <GridMultiService />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbarCommon />
+                <HaierCarousal />
+                <HaierGridMultiService />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* BookNow Page */}
           <Route
-            path="/book-now"
+            // path="lg/book-now"
+            path={`/${brandName}/haier/book-now`}
             element={
               <>
-                <Navbar />
-                <BookNowCards />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierBookNowCards />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Troubleshoot Page */}
           <Route
-            path="/troubleshoot"
+            // path="lg/troubleshoot"
+            path={`/${brandName}/haier/troubleshoot`}
             element={
               <>
-                <Navbar />
-                <TroubleshootCards />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierTroubleshootCards />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
+              </>
+            }
+          />
+
+          {/* Troubleshoot Page */}
+          <Route
+            // path="lg/exoticdeletecards"
+            path={`/${brandName}/haier/exoticdeletecards`}
+            element={
+              <>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierExoticAUtoDeleteCards />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/tv"
+            // path="lg/tv"
+            path={`/${brandName}/haier/tv`}
             element={
               <>
-                <Navbar />
-                <TvComponent />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierTvComponent />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/washing"
+            // path="/lg/washing"
+            path={`/${brandName}/haier/washing`}
             element={
               <>
-                <Navbar />
-                <WashingMachine />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierWashingMachine />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/microwave"
+            // path="lg/microwave"
+            path={`/${brandName}/haier/microwave`}
             element={
               <>
-                <Navbar />
-                <MicroWave />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierMicroWave />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/Refrigerator"
+            // path="lg/Refrigerator"
+            path={`/${brandName}/haier/Refrigerator`}
             element={
               <>
-                <Navbar />
-                <Refrigerator />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierRefrigerator />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/DishWasher"
+            // path="lg/DishWasher"
+            path={`/${brandName}/haier/waterheater`}
             element={
               <>
-                <Navbar />
-                <Dishwasher />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierDishwasher />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* Tvcomponent Page */}
           <Route
-            path="/aircondition"
+            // path="lg/aircondition"
+            path={`/${brandName}/haier/aircondition`}
             element={
               <>
-                <Navbar />
-                <AirConditioner />
-                <Chatbot />
-                <ContactUsFloating/>
-              </>
-            }
-          />
-             <Route
-            path="/musicstereo"
-            element={
-              <>
-                <Navbar />
-                <MusicStereo />
-                <Chatbot />
-                <ContactUsFloating/>
-              </>
-            }
-          />
-          <Route
-            path="/playstation"
-            element={
-              <>
-                <Navbar />
-                <PlayStation />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierAirConditioner />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
 
           {/* All products Page */}
           <Route
-            path="/products"
+            // path="lg/products"
+            path={`/${brandName}/haier/products`}
             element={
               <>
-                <Navbar />
-                <AllProducts />
-                <Chatbot />
-                <ContactUsFloating/>
+                <HaierOffers />
+                <HaierNavbar />
+                <HaierAllProducts />
+                <HaierChatbot />
+                <HaierContactUsFloating />
+                <HaierFooter />
+                <HaierConsoleBox />
               </>
             }
           />
+          {/* HAIER COMPONENTS END HERE -------------------------->  */}
         </Routes>
-        <Footer />
       </Router>
     </AppContext.Provider>
   );
