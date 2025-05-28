@@ -68,12 +68,12 @@ const ConsoleBox = () => {
     {
       icon: <FaHome size={20} />,
       tooltip: "Home",
-      path: `/${brandName}/haier`,
+      path: `/${brandName}/`,
     },
     {
       icon: <FaBuilding size={20} />,
       tooltip: "Brand Page",
-      path: `/${brandName}/haier`,
+      path: `/${brandName}/`,
     },
     {
       icon: <FaUser size={20} />,

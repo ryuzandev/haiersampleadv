@@ -71,7 +71,7 @@ function Navbar() {
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to={`/${brandName}/haier`}
+          to={`/${brandName}/`}
           className="d-flex align-items-center"
         >
           <img

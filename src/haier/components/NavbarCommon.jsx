@@ -81,7 +81,8 @@ function NavbarCommon() {
         </NavbarComponent.Brand> */}
         <NavbarComponent.Brand
           as={Link}
-          to={`/${brandName}/lg`}
+          // to={`/${brandName}/lg`}
+          to={`/${brandName}/`}
           className="d-flex align-items-center"
         >
           <img
