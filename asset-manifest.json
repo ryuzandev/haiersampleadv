@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/haiersampleadv/static/css/main.889cabf6.css",
-    "main.js": "/haiersampleadv/static/js/main.d52e160a.js",
+    "main.js": "/haiersampleadv/static/js/main.0611e3ab.js",
     "static/media/dtwo.jpg": "/haiersampleadv/static/media/dtwo.638c9ac3932f277aa4f2.jpg",
     "static/media/twoC.jpg": "/haiersampleadv/static/media/twoC.f1ed8233493a2f8d53e8.jpg",
     "static/media/dfour.jpg": "/haiersampleadv/static/media/dfour.6d722c29d4368092ca0f.jpg",
@@ -49,10 +49,10 @@
     "static/media/haierLogo.png": "/haiersampleadv/static/media/haierLogo.3413c0bbe668284d7f42.png",
     "index.html": "/haiersampleadv/index.html",
     "main.889cabf6.css.map": "/haiersampleadv/static/css/main.889cabf6.css.map",
-    "main.d52e160a.js.map": "/haiersampleadv/static/js/main.d52e160a.js.map"
+    "main.0611e3ab.js.map": "/haiersampleadv/static/js/main.0611e3ab.js.map"
   },
   "entrypoints": [
     "static/css/main.889cabf6.css",
-    "static/js/main.d52e160a.js"
+    "static/js/main.0611e3ab.js"
   ]
 }
