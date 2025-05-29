@@ -29,7 +29,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the Television page.",
           // route: "/tv",
-          route: `/${brandName}/lg/tv`,
+          route: `/${brandName}/haier/tv`,
         },
       ]);
     } else if (userMsg.includes("ac") || userMsg.includes("air conditioner")) {
@@ -39,7 +39,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the Air Conditioner page.",
           // route: "/aircondition",
-          route: `/${brandName}/lg/aircondition`,
+          route: `/${brandName}/haier/aircondition`,
         },
       ]);
     } else if (userMsg.includes("microwave")) {
@@ -49,7 +49,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the Microwave page.",
           // route: "/microwave",
-          route: `/${brandName}/lg/microwave`,
+          route: `/${brandName}/haier/microwave`,
         },
       ]);
     } else if (
@@ -62,7 +62,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the Washing Machine page.",
           // route: "/washing",
-          route: `/${brandName}/lg/washing`,
+          route: `/${brandName}/haier/washing`,
         },
       ]);
     } else if (userMsg.includes("refrigerator")) {
@@ -72,7 +72,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the Refrigerator page.",
           // route: "/Refrigerator",
-          route: `/${brandName}/lg/Refrigerator`,
+          route: `/${brandName}/haier/Refrigerator`,
         },
       ]);
     } else if (userMsg.includes("dish washer")) {
@@ -82,7 +82,7 @@ const Chatbot = () => {
           from: "bot",
           text: "Please visit the dish washer page.",
           // route: "/DishWasher",
-          route: `/${brandName}/lg/DishWasher`,
+          route: `/${brandName}/haier/DishWasher`,
         },
       ]);
     } else if (userMsg.includes("yes")) {

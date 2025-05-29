@@ -75,11 +75,11 @@ const ConsoleBox = () => {
       tooltip: "Brand Page",
       path: `/${brandName}/`,
     },
-    {
-      icon: <FaUser size={20} />,
-      tooltip: "Login",
-      path: `/${brandName}/settings`,
-    },
+    // {
+    //   icon: <FaUser size={20} />,
+    //   tooltip: "Login",
+    //   path: `/${brandName}/settings`,
+    // },
     // {
     //   icon: <FaSearch size={20} />,
     //   tooltip: "Search engine",

@@ -1,0 +1,82 @@
+.gc-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .gc-logo {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    animation: pulse 3s infinite;
+  }
+  
+  .gc-search-form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .gc-search-input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  
+  .gc-search-button {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #00c9ff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gc-search-button:hover {
+    background-color: #92fe9d;
+    color: #000;
+  }
+  
+  .gc-results {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gc-result-item {
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    backdrop-filter: blur(5px);
+  }
+  
+  .gc-result-item:hover {
+    background: #fff;
+    color: #000;
+    transform: scale(1.1);
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  

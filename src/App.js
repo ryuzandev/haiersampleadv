@@ -23,6 +23,9 @@ import HaierContactUsFloating from "./haier/components/AssestComponents/ContactU
 import HaierExoticAUtoDeleteCards from "./haier/components/ExoticAutoDeleteCards";
 import HaierConsoleBox from "./haier/components/AssestComponents/ConsoleBox";
 // importing Components FOR haier------------------------------> end
+// importing homepage components start------------>
+import Homebale from "./democomponents/Homebale";
+// importing homepage components end----------------->
 
 // Context Resource
 import { createContext } from "react";
@@ -31,7 +34,7 @@ import { createContext } from "react";
 export const AppContext = createContext();
 
 function App() {
-  const brandName = "haiersample";
+  const brandName = "haiersampleadv";
   return (
     <AppContext.Provider value={{ brandName }}>
       <Router>
@@ -41,12 +44,13 @@ function App() {
             // path="lg/"
             // path={`/${brandName}/haier/`}
             // path={`/${brandName}/`}
-            path={`/haiersample/`}
+            path={`/haiersampleadv/`}
             element={
               <>
                 {/* <HaierOffers /> */}
                 <HaierNavbarCommon />
                 <HaierCarousal />
+                <Homebale />
                 <HaierGridMultiService />
                 <HaierChatbot />
                 <HaierContactUsFloating />
